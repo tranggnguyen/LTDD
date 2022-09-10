@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/laptop"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkbox3"
+        android:layout_marginBottom="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkbox2"
+        android:layout_marginBottom="10dp" />
+
+    <SeekBar
+        android:id="@+id/seakbar3"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/checkbox3"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/ba" />
+
+    <SeekBar
+        android:id="@+id/seakbar2"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkbox3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@id/checkbox2"
+        android:paddingLeft="200dp"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/ca" />
+
+    <SeekBar
+        android:id="@+id/seakbar1"
+        android:layout_width="364dp"
+        android:layout_height="51dp"
+        android:layout_above="@id/checkbox2"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/checkbox1"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/pikachu" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:paddingTop="30dp" />
+    <TextView
+        android:id="@+id/textviewDiemSo"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#f02"
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@drawable/pl"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</RelativeLayout>
+
+
