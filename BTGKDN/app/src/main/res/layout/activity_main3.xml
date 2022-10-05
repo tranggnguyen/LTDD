@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen"
+    tools:context=".MainActivity3">
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="ĐĂNG KÝ TÀI KHOẢN"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round"
+        android:hint="Tên người dùng"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/tim" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round"
+        android:textColorHint="@color/tim"
+        android:hint="Gmail"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="30dp"
+        android:textColorHint="@color/tim"
+        android:background="@drawable/round"
+        android:hint="SĐT"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round"
+        android:hint="Mật khẩu"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:textColor="#000"
+        android:textColorHint="@color/tim" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round"
+        android:hint="Nhập lại mật khẩu"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:textColor="#000"
+        android:textColorHint="@color/tim" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="447dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/purple_200"
+        android:hint="ĐĂNG KÝ"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="53dp"
+        android:layout_toEndOf="@+id/text"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="-128dp"
+        android:text="Nếu đã có tài khoản:"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
