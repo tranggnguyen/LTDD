@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_portrait_24"
+            android:title="Profile" />
+        <item android:id="@+id/nav_shop"
+            android:icon="@drawable/ic_baseline_store_24"
+            android:title="Shop" />
+        <item android:id="@+id/nav_order"
+            android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+            android:title="Order" />
+        <item android:id="@+id/nav_out"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="Logout" />
+    </group>
+</menu>
