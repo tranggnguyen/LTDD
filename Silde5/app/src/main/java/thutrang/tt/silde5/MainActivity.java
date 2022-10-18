@@ -1,26 +1,27 @@
 package thutrang.tt.silde5;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.List;
 
 import thutrang.tt.silde5.adapter.EmployeeAdapter;
 import thutrang.tt.silde5.model.Employee;
-import thutrang.tt.silde5.sqlite.DBHelper;
 import thutrang.tt.silde5.sqlite.EmplyoyeeDao;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
     private EmployeeAdapter employeeAdapter;
     private ListView lvEmployees;
     private String employeeId;
+    private List<Employee>list;
 
     public MainActivity() {
     }
@@ -53,6 +54,18 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    @Override
+    protected void onResume() {
+        super.onResume();
+        EmplyoyeeDao dao = new EmplyoyeeDao(this);
+        List<Employee>updateList=dao.getAll();
+        list.clear();
+        updateList.forEach(item->list.add(item));
+        employeeAdapter.notifyDataSetChanged();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(this,AddOrEditEmployeeActivity.class);
@@ -70,6 +83,18 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 intent.putExtra("data",bundle);
 
                 startActivity(intent);
+                break;
+            case R.id.btnDelete:
+                if(employeeId == null){
+                    Toast.makeText(this,"Employee is must be selected"
+                            ,Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                EmplyoyeeDao dao = new EmplyoyeeDao(this);
+                dao.delete(employeeId);
+                employeeId =null;
+                onResume();
+                Toast.makeText(this,"Employee is must be deleted",Toast.LENGTH_SHORT).show();
                 break;
         }
 
