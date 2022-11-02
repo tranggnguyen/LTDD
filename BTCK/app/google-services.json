@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "925018116253",
+    "firebase_url": "https://btgk-c12ce-default-rtdb.firebaseio.com",
+    "project_id": "btgk-c12ce",
+    "storage_bucket": "btgk-c12ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925018116253:android:ca3b4d0649908464ce4474",
+        "android_client_info": {
+          "package_name": "com.example.btgk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925018116253-u3n7jscibhmucub1av1j5g1verm8v8av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfBbb5k9xjEfEGK_WVVQhuddYTeTGQtog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925018116253-u3n7jscibhmucub1av1j5g1verm8v8av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
